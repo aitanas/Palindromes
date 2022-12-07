@@ -10,8 +10,9 @@ namespace Palindromes.Tests
     public void CreateArray_StoreInputArray()
     {
       PalindromeFinder testPalindrome = new PalindromeFinder();
-      string[] lettersArray = new string[5];
-      Assert.AreEqual(true, testPalindrome.CreateArray("hello"));
+      string[] inputArray = {"m", "o", "m"};
+      string[] reverseArray = Array.Reverse(inputArray);
+      Assert.AreEqual(true, testPalindrome.CreateArray(inputArray, reverseArray));
     }
     //Array
 
